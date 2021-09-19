@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="w-75 mx-auto my-5">
+
+
+        <div class="form-group">
+            <label for=" productName " class="my-3"> productName :</label>
+            <input type="text" class=" form-control" id="productName">
+            <small class="text-muted">productName must start with uppercase </small>
+        </div>
+        <div class="form-group">
+            <label for=" productPrice " class="my-3"> productPrice :</label>
+            <input type="number" class="my-2 form-control " id="productPrice">
+        </div>
+
+        <div class="form-group">
+            <label for=" productCategory "> productCategory :</label>
+            <input type="text" class="my-3 form-control " id="productCategory">
+        </div>
+
+        <div class="form-group">
+            <label for=" productDescription "> productDescription :</label>
+            <textarea type="text" class="my-3 form-control " id="productDescription"> </textarea>
+        </div>
+
+
+        <button onclick="add()" id="myBtn" class="btn btn-outline-info my-3">Add Product</button>
+
+
+
+    </div>
+
+    <div class="w-75 mx-auto my-3">
+
+        <label class="my-2" for="">Search for a productName</label>
+        <input type="text" id="" onkeyup="searchProduct(this.value) " class="form-control">
+    </div>
+
+
+    <table class="table container text-center">
+
+
+        <thead>
+            <tr>
+                <th>index:</th>
+                <th>price :</th>
+                <th>name:</th>
+                <th>category:</th>
+                <th>description:</th>
+                <th>update:</th>
+                <th>delete:</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="js/popper.min.js ">
+    </script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/java.js "></script>
+
+</body>
+
+
+
+</html>
